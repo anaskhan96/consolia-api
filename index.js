@@ -47,12 +47,12 @@ function load(str, callback) {
                 }
             } else {
                 var id = parseInt(str);
-                if (id > lastId) {
+                if (id <= lastId) {
+                    res = res.reverse();
+                    res[id - 1].image = imgPrefixUrl + res[id - 1].image
+                    callback(res[id - 1], null);
+                } else
                     callback(undefined, 'comic specific to the given id doesn\'t exist');
-                }
-                res = res.reverse();
-                res[id - 1].image = imgPrefixUrl + res[id - 1].image
-                callback(res[id - 1], null);
             }
         }).catch((err) => {
             callback(undefined, err.message);
