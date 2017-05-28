@@ -1,0 +1,16 @@
+{
+  "name": "consolia-api",
+  "version": "1.0.0",
+  "description": "fetches consolia comics using an API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "consolia",
+    "comics",
+    "api"
+  ],
+  "author": "Anas Khan <anas.khan96@outlook.com> (https://anask.xyz)",
+  "license": "MIT"
+}
