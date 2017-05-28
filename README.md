@@ -39,7 +39,7 @@ consolia.load(85, function (data, err) {
 });
 ```
 `load` returns a JSON containing the data, while `archive` returns an array of all the JSONs. Example of one such comic returned:
-```json
+```javascript
 { 
     title: 'Trust in software',
     image: 'https://static.consolia-comic.com/comics/trust.png',
