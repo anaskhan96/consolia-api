@@ -1,6 +1,6 @@
 {
   "name": "consolia-api",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "fetches consolia comics using an API",
   "main": "index.js",
   "scripts": {
