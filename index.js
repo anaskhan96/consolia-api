@@ -33,22 +33,29 @@ function load(str, callback) {
     }).then((response) => response.json())
         .then((res) => {
             lastId = res[0].id;
-            if (!isNaN(str)) {
+            if (isNaN(str)) {
                 if (str == 'latest') {
+                    res[0].image = imgPrefixUrl + res[0].image;
                     callback(res[0], null);
                 } else if (str == 'random') {
                     res = res.reverse();
                     var randId = Math.floor(Math.random() * lastId);
+                    res[randId].image = imgPrefixUrl + res[randId].image;
                     callback(res[randId], null);
                 } else {
                     callback(undefined, 'first argument invalid; should either be "latest", "random" or a corresponding id');
                 }
             } else {
-                id = parseInt(str);
-                
+                var id = parseInt(str);
+                if (id > lastId) {
+                    callback(undefined, 'comic specific to the given id doesn\'t exist');
+                }
+                res = res.reverse();
+                res[id - 1].image = imgPrefixUrl + res[id - 1].image
+                callback(res[id - 1], null);
             }
         }).catch((err) => {
-
+            callback(undefined, err.message);
         });
 }
 
