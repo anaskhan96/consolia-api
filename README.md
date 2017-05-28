@@ -1,5 +1,6 @@
 # consolia-api
 [![Build Status](https://travis-ci.org/anaskhan96/consolia-api.svg?branch=master)](https://travis-ci.org/anaskhan96/consolia-api)
+[![npm version](https://badge.fury.io/js/consolia-api.svg)](https://badge.fury.io/js/consolia-api)
 
 `consolia-api` is an npm module for fetching comics from [consolia-comic.com](https://consolia-comic.com).
 
