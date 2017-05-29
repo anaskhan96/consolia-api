@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "description": "fetches consolia comics using an API",
   "main": "index.js",
+  "bin": {
+  	"consolia": "src/cli.js"
+  },
   "scripts": {
     "test": "echo \"Test completed\" && exit 0"
   },
