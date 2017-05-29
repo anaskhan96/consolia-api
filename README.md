@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/anaskhan96/consolia-api.svg?branch=master)](https://travis-ci.org/anaskhan96/consolia-api)
 [![npm version](https://badge.fury.io/js/consolia-api.svg)](https://badge.fury.io/js/consolia-api)
 
-`consolia-api` is an npm module for fetching comics from [consolia-comic.com](https://consolia-comic.com).
+`consolia-api` is an npm module (with a command line utility) for fetching comics from [consolia-comic.com](https://consolia-comic.com).
 
 ### Installation
 
@@ -51,4 +51,20 @@ consolia.load(85, function (data, err) {
     slug: 'trust',
     sublog: 'There are two kinds of developers in this world. Those who don\'t trust software, and those other devs who also do not trust software.'
 }
+```
+
+### Command Line
+
+`consolia-api` can also be installed globally to fetch comics right in the terminal.
+
+```bash
+npm install consolia-api -g
+```
+
+The following commands can be run :
+
+```bash
+Usage Details:
+
+consolia [ latest | random | <id> ]
 ```
