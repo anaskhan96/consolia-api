@@ -58,7 +58,7 @@ consolia.load(85, function (data, err) {
 `consolia-api` can also be installed globally to fetch comics right in the terminal.
 
 ```bash
-npm install consolia-api -g
+npm install -g consolia-api
 ```
 
 The following commands can be run :
